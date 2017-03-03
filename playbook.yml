@@ -1,0 +1,5 @@
+---
+- hosts: localhost
+  tasks: 
+   - name: Bitbucket deployment
+     git: repo=https://github.com/Anuj1990/MavenBuild.git dest=/home/ec2-user/ accept_hostkey=yes
